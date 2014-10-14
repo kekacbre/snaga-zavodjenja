@@ -1,0 +1,84 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="author" content="Scala Team" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:title" content="" />
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:description" content="" />
+<title>Snaga zavodjenja</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/framework.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="images/favicon.png" />
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/custom.js"></script>
+
+</head>
+<body>
+<div id="header">
+	<div id="header-holder">
+        <div id="left-logo"><img src="images/levo-logo.png"></div>
+        <div id="logo"><img src="images/logo.png" alt="snaga zavodjenja logo"></div>
+        <div id="right-buttons">
+            <a href="#" class="reg-form">Registracija</a>
+            <a href="#" class="login-form">Login</a>
+        </div>
+	    <div id="reg-box">
+          	<a class="close"><img title="close" class="close_image" src="images/closelabel.png"></a>
+        	<div id="box-header"><img src="images/login-heart-header.png" alt="snaga zavodjenja header heart" class="header-heart"></div>
+        	<div id="box-body">
+            	<form action="#" method="post" enctype="multipart/form-data">
+                	<label>Korisničko ime:</label>
+                    <input type="text" name="name" />
+                	<label>Email:</label>
+                    <input type="text" name="email" />
+               	  	<span class="line10-strong"></span>
+                	<label>Lozinka:</label>
+                  	<input type="password" name="password" />
+       	  	  	  	<label>Ponovi lozinku:</label>
+                    <input type="password" name="repeat-password" class="mrgB0"/>
+                  	<span class="line20-strong"></span>
+               	  	<div class="check_button check_1 active transition" onClick="$(this).addClass('active'); $('.check_2').removeClass('active'); $('.premium').val('besplatno');">
+                    Besplatno<br> članstvo
+                    </div>
+                    <div class="check_button check_2 fright transition" onClick="$(this).addClass('active'); $('.check_1').removeClass('active'); $('.premium').val('full');">
+                    Puno <br>članstvo
+                    </div>
+                    <input type="hidden" name="premium" class="premium" value="bussiness"/>
+                  	<span class="line20-strong"></span>
+                    <button type="submit" class="submit transition">Login</button>
+                </form>
+                <div id="box-desc">
+                	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.
+                </div>
+            </div>
+        </div>
+		<div id="login-box"></div>
+
+    </div>
+</div>
+<div id="body">
+	<div id="menu">
+    	<a href="#" class="home">Naslovna</a>
+    	<a href="#">Objave</a>
+    	<a href="#">Usluge</a>
+    	<a href="#">Akcije</a>
+    	<a href="#">O nama</a>
+    	<a href="#">Kontakt</a>
+        <form id="search">
+        	<input type="text" holder="Traži" class="trazi"/>
+        	<input type="submit" class="trazi-button" />
+        </form>
+    </div>
+	<div id="bodyLeft"></div>
+	<div id="bodyRight"></div>
+</div>
+
+<div id="log-overlay" style="display: none; opacity: 0.7;"></div>
+</body>
+</html>	
