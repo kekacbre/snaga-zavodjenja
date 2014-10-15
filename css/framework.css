@@ -2,6 +2,10 @@
 .ie6 img {
 	width:100%;
 }
+img {
+	border: none;
+	outline:none;	
+}
 .clearfix:after { 
   content: "."; 
   display: block; 

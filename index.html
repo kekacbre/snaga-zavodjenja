@@ -17,13 +17,16 @@
 
 <script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/custom.js"></script>
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/owl.theme.css" rel="stylesheet">
+<link href="css/owl.transitions.css" rel="stylesheet">
 
 </head>
 <body>
 <div id="header">
 	<div id="header-holder">
         <div id="left-logo"><img src="images/levo-logo.png"></div>
-        <div id="logo"><img src="images/logo.png" alt="snaga zavodjenja logo"></div>
+        <div id="logo"><a href="index.html"><img src="images/logo.png" alt="snaga zavodjenja logo"></a></div>
         <div id="right-buttons">
             <a href="#" class="reg-form">Registracija</a>
             <a href="#" class="login-form">Login</a>
@@ -58,27 +61,217 @@
                 </div>
             </div>
         </div>
-		<div id="login-box"></div>
-
+		<div id="login-box">
+          	<a class="close"><img title="close" class="close_image" src="images/closelabel.png"></a>
+        	<div id="box-header"><img src="images/login-heart-header.png" alt="snaga zavodjenja header heart" class="header-heart"></div>
+        	<div id="box-body">
+            	<form action="#" method="post" enctype="multipart/form-data">
+                	<label>Korisničko ime:</label>
+                    <input type="text" name="name" />
+                	<label>Email:</label>
+                    <input type="text" name="email" />
+                  	<span class="line20-strong"></span>
+                  	<button type="submit" class="submit transition">Login</button>
+                </form>
+                <div id="box-desc">
+                	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div id="body">
 	<div id="menu">
-    	<a href="#" class="home">Naslovna</a>
-    	<a href="#">Objave</a>
-    	<a href="#">Usluge</a>
-    	<a href="#">Akcije</a>
-    	<a href="#">O nama</a>
-    	<a href="#">Kontakt</a>
+    	<ul>
+            <li><a href="#" class="home">Naslovna</a></li>
+            <li>
+            	<a href="#" class="arrow">Objave</a>
+                <ul class="transition">
+                	<li><a href="#">Šta je snaga zavođenja?</a></li>
+                	<li><a href="#">Astro zavodjenje</a></li>
+                	<li>
+                    	<a href="#" class="arrow1">Brzo zavođenje</a>
+                        <ul class="transition">
+                            <li><a href="#">Šta je snaga zavođenja?</a></li>
+                            <li><a href="#">Astro zavodjenje</a></li>
+                            <li><a href="#">Brzo zavođenje</a></li>
+                            <li><a href="#">Kategorije zavodnika</a></li>
+                            <li><a href="#">Pravila zavođenja</a></li>
+                        </ul>
+                    </li>
+                	<li><a href="#">Kategorije zavodnika</a></li>
+                	<li><a href="#">Pravila zavođenja</a></li>
+                </ul>
+            </li>
+            <li>
+            	<a href="#" class="arrow">Usluge</a>
+                <ul class="transition">
+                	<li><a href="#">Šta je snaga zavođenja?</a></li>
+                	<li><a href="#">Astro zavodjenje</a></li>
+                	<li><a href="#">Brzo zavođenje</a></li>
+                	<li><a href="#">Kategorije zavodnika</a></li>
+                	<li><a href="#">Pravila zavođenja</a></li>
+                </ul>
+            </li>
+            <li>
+            	<a href="#" class="arrow">Akcije</a>
+                <ul class="transition">
+                	<li><a href="#">Šta je snaga zavođenja?</a></li>
+                	<li><a href="#">Astro zavodjenje</a></li>
+                	<li><a href="#">Brzo zavođenje</a></li>
+                	<li><a href="#">Kategorije zavodnika</a></li>
+                	<li><a href="#">Pravila zavođenja</a></li>
+                </ul>
+            </li>
+            <li><a href="#">O nama</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
         <form id="search">
         	<input type="text" holder="Traži" class="trazi"/>
         	<input type="submit" class="trazi-button" />
         </form>
     </div>
-	<div id="bodyLeft"></div>
-	<div id="bodyRight"></div>
-</div>
+    <div id="owl-demo" class="owl-carousel">
+        <div class="item"><img src="images/slide1.jpg" alt="besplatno izdanje snaga zavodjenja"></div>
+        <div class="item"><img src="images/slide1.jpg" alt="besplatno izdanje snaga zavodjenja"></div>
+        <div class="item"><img src="images/slide1.jpg" alt="besplatno izdanje snaga zavodjenja"></div>
+    </div>
+   	<div class="mrgR10 mrgL10 clearfix"><span class="line20-strong"></span></div>
+    
+  	<div id="bodyRight" class="clearfix">
+    	<div id="title-right">Novosti</div>
+        <form action="#" method="post" enctype="multipart/form-data" id="newsletter">
+        	<input type="text" name="newsletter" holder="Prijavite se za besplatni bilten" class="newsletter-input"/>
+        	<input type="submit" class="newsletter-button" />
+        </form>
+        
+   		<div id="title-right" class="mrgT20">Društvene mreže</div>
+	  	<div id="social">
+          <a href="#" class="fb transition"></a>
+          <a href="#" class="tw transition"></a>
+          <a href="#" class="g transition"></a>
+          <a href="#" class="mail transition"></a>
+      	</div>        	
+   	  	<div id="title-right" class="mrgT20">Izjave čitalaca</div>
+        <div id="owl-testimonials" class="owl-carousel fleft">
+        	<div class="item">
+                What do you stand for? What do you value most in life? Do you have answers to these two questions? If not, here’s what may happen. 
+                “If you don’t stand for something you’ll fall for anything” is a well-known saying. Your values are your life basis. 
+            </div>
+        	<div class="item">
+                What do you stand for? What do you value most in life? Do you have answers to these two questions? If not, here’s what may happen. 
+                “If you don’t stand for something you’ll fall for anything” is a well-known saying. Your values are your life basis. 
+            </div>
+        	<div class="item">
+                What do you stand for? What do you value most in life? Do you have answers to these two questions? If not, here’s what may happen. 
+                “If you don’t stand for something you’ll fall for anything” is a well-known saying. Your values are your life basis. 
+                What do you stand for? What do you value most in life? Do you have answers to these two questions? If not, here’s what may happen. 
+                “If you don’t stand for something you’ll fall for anything” is a well-known saying. Your values are your life basis. 
+            </div>
+	    </div>
 
+  	</div>
+    
+	<div id="bodyLeft" class="clearfix">
+    	<div id="body-title">Poslednje objave</div>
+      	<div id="home-post">
+       	  	<div class="home-post-title"><a href="#">Tehnika zavođenja kroz humor</a></div>
+        	<div class="home-post-image"><img src="images/post-image.jpg" alt="snaga zavodjenja - post"></div>
+       	  	<div class="home-post-date">Septembar 28, 2014 </div>
+        	<div class="home-post-text">
+                Današnja tehnika je prvenstveno namenjena zavodnicima koji osim što umeju da započnu razgovor, dobri su u širenju priče i izgradnji početne privlačnosti. 
+                Drugim rečima, ide im opušteno do “zatvaranja” broja. Da bi broj koji si uzeo od prelepe devojke značio i da će se zaista javiti, tj. da ćete se videti, 
+                dobro je da još...
+            </div>
+        	<div class="home-post-more"><a href="#">OPŠIRNIJE</a></div>
+        </div>
+      	<div id="home-post">
+       	  	<div class="home-post-title"><a href="#">Tehnika zavođenja kroz humor</a></div>
+        	<div class="home-post-image"><img src="images/post-image.jpg" alt="snaga zavodjenja - post"></div>
+       	  	<div class="home-post-date">Septembar 28, 2014 </div>
+        	<div class="home-post-text">
+                Današnja tehnika je prvenstveno namenjena zavodnicima koji osim što umeju da započnu razgovor, dobri su u širenju priče i izgradnji početne privlačnosti. 
+                Drugim rečima, ide im opušteno do “zatvaranja” broja. Da bi broj koji si uzeo od prelepe devojke značio i da će se zaista javiti, tj. da ćete se videti, 
+                dobro je da još...
+            </div>
+        	<div class="home-post-more"><a href="#">OPŠIRNIJE</a></div>
+        </div>
+      	<div id="home-post">
+       	  	<div class="home-post-title"><a href="#">Tehnika zavođenja kroz humor</a></div>
+        	<div class="home-post-image"><img src="images/post-image.jpg" alt="snaga zavodjenja - post"></div>
+       	  	<div class="home-post-date">Septembar 28, 2014 </div>
+        	<div class="home-post-text">
+                Današnja tehnika je prvenstveno namenjena zavodnicima koji osim što umeju da započnu razgovor, dobri su u širenju priče i izgradnji početne privlačnosti. 
+                Drugim rečima, ide im opušteno do “zatvaranja” broja. Da bi broj koji si uzeo od prelepe devojke značio i da će se zaista javiti, tj. da ćete se videti, 
+                dobro je da još...
+            </div>
+        	<div class="home-post-more"><a href="#">OPŠIRNIJE</a></div>
+        </div>
+      	<div id="home-post">
+       	  	<div class="home-post-title"><a href="#">Tehnika zavođenja kroz humor</a></div>
+        	<div class="home-post-image"><img src="images/post-image.jpg" alt="snaga zavodjenja - post"></div>
+       	  	<div class="home-post-date">Septembar 28, 2014 </div>
+        	<div class="home-post-text">
+                Današnja tehnika je prvenstveno namenjena zavodnicima koji osim što umeju da započnu razgovor, dobri su u širenju priče i izgradnji početne privlačnosti. 
+                Drugim rečima, ide im opušteno do “zatvaranja” broja. Da bi broj koji si uzeo od prelepe devojke značio i da će se zaista javiti, tj. da ćete se videti, 
+                dobro je da još...
+            </div>
+        	<div class="home-post-more"><a href="#">OPŠIRNIJE</a></div>
+        </div>
+      	<div id="home-post">
+       	  	<div class="home-post-title"><a href="#">Tehnika zavođenja kroz humor</a></div>
+        	<div class="home-post-image"><img src="images/post-image.jpg" alt="snaga zavodjenja - post"></div>
+       	  	<div class="home-post-date">Septembar 28, 2014 </div>
+        	<div class="home-post-text">
+                Današnja tehnika je prvenstveno namenjena zavodnicima koji osim što umeju da započnu razgovor, dobri su u širenju priče i izgradnji početne privlačnosti. 
+                Drugim rečima, ide im opušteno do “zatvaranja” broja. Da bi broj koji si uzeo od prelepe devojke značio i da će se zaista javiti, tj. da ćete se videti, 
+                dobro je da još...
+            </div>
+        	<div class="home-post-more"><a href="#">OPŠIRNIJE</a></div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+	<div id="footer-container">
+    	<div id="sitemap">
+        	<a href="#">Naslovna</a>
+        	<a href="#">Objave</a>
+        	<a href="#">Usluge</a>
+        	<a href="#">Akcije</a>
+        	<a href="#">O nama</a>
+        </div>
+	</div>
+</div>
 <div id="log-overlay" style="display: none; opacity: 0.7;"></div>
+
+<script src="js/owl.carousel.js"></script>
+<style>
+	#owl-demo .item img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+</style>
+<script>
+	$(document).ready(function() {
+	  $("#owl-demo").owlCarousel({
+		  navigation : false,
+		  slideSpeed : 300,
+		  paginationSpeed : 400,
+		  autoPlay: 5000,
+		  transitionStyle: 'goDown',
+		  singleItem : true
+	  });
+	  $("#owl-testimonials").owlCarousel({
+		  navigation : true,
+		  slideSpeed : 300,
+		  pagination: false,
+		  autoPlay: 3000,
+		  singleItem : true,
+		  navigationText: 	["",""]
+	  });
+	});
+</script>
+
 </body>
 </html>	
