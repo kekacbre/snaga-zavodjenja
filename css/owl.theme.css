@@ -2,7 +2,12 @@
 * 	Owl Carousel Owl Demo Theme 
 *	v1.3.3
 */
-
+#owl-testimonials .item{
+	font-family: "museo300", arial;
+	font-size: 13px;
+	padding:10px;
+	line-height:1.5;
+}
 .owl-theme .owl-controls {
     bottom: 10px;
     margin-top: 10px;
@@ -47,6 +52,22 @@
 	widows: 13px;
 	height: 23px;
 }
+#owl-testimonials .item .pink-line-text {
+	background-image: url(../images/pink-line.jpg);
+	background-repeat: repeat-x;
+	background-position: center center;
+	height: 25px;
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 40px;
+}
+#owl-testimonials .item .pink-line-text .text-bg {
+	background-color: #F2E7F5;
+	padding: 0 10px;
+}
+
+
 
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */

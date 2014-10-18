@@ -30,6 +30,7 @@ img {
     box-sizing: border-box;
 }
 
+.padA10 {padding: 10px !important}
 .padA20 {padding: 20px !important}
 .padA30 {padding: 30px !important}
 .padB10 {padding-bottom: 10px !important}

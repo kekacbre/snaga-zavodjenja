@@ -1,4 +1,4 @@
-@charset "utf-8";
+	@charset "utf-8";
 
 /* CSS Document */
 @font-face {
@@ -457,6 +457,7 @@ ul{
 	min-height: 200px;
 	overflow: hidden;
 	position: relative;
+	padding-bottom: 20px; 
 }
 #bodyLeft {
 	height: auto;
@@ -551,6 +552,124 @@ ul{
 #home-post .home-post-more a:hover{
 	color: #f675b0;
 }
+#group-post {
+	border-bottom: 1px solid #9b5475;
+	float: left;
+	height: auto;
+	width: 49%;
+	margin-right: 2%; 
+	display: block;
+	text-decoration: none;
+	padding-right: 10px;
+	margin-top: 20px;
+}
+#group-post:hover {
+	background: #9b5475;
+}
+#group-post:nth-child(2n+0) {
+	margin-right: 0%; 
+}
+#group-post .group-post-title {
+	margin: 20px 0;
+	text-align:center;
+	font-size: 22px;
+	line-height: 30px;
+	color: #ad4f7a;
+	text-decoration: none;
+}
+#group-post:hover .group-post-title{
+	color: #fff;
+}
+#group-post .group-post-image {
+	float: left;
+	height: 105px;
+	width: 105px;
+	margin-right: 20px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+#group-post .group-post-image img {
+	float: left;
+	height: 100%;
+	width: auto;
+}
+#group-post .group-post-date {
+	/* [disabled]float: left; */
+	height: 20px;
+	width: 100%;
+	font-size: 12px;
+	line-height: 20px;
+	color: #7a7a7a;
+	text-decoration: none;
+	text-align: right;
+}
+#group-post .group-post-text {
+	height: auto;
+	width: auto;
+	font-size: 12px;
+	line-height: 20px;
+	color: #2b2b2b;
+	text-decoration: none;
+}
+#group-post:hover .group-post-text {
+	color: #fff;
+}
+#testimonials-post {
+	float: left;
+	height: auto;
+	width: 49%;
+	margin-right: 2%;
+	display: block;
+	text-decoration: none;
+	padding-right: 10px;
+	margin-top: 35px;
+}
+
+#testimonials-post:nth-child(2n+0) {
+	margin-right: 0%; 
+}
+#testimonials-post .testimonials-post-image {
+	float: left;
+	width: 105px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+#testimonials-post .testimonials-post-image img {
+	float: left;
+	height: auto;
+	width: 100%;
+}
+#testimonials-post .testimonials-post-image .testimonial-name {
+	text-align: center;
+	display: inline-block;
+	float: left;
+	height: auto;
+	width: 100%;
+	font: 32px/25px italianno;
+	color: #ad4f7a;
+	text-decoration: none;
+	margin-top: 20px;
+}
+#testimonials-post .testimonials-post-image .testimonial-date {
+	text-align: center;
+	display: inline-block;
+	float: left;
+	height: auto;
+	width: 100%;
+	font: 18px italianno;
+	color: #6c6c6c;
+	text-decoration: none;
+}
+
+#testimonials-post .testimonials-post-text {
+	height: auto;
+	width: 220px;
+	color: #2b2b2b;
+	text-decoration: none;
+	float: left;
+	font: 13px/18px "museo300";
+}
 #title-right {
 	float: left;
 	height: auto;
@@ -635,31 +754,231 @@ ul{
 	height: 66px;
 	width: 60px;
 }
-#footer {
+#dodaj-izjavu  {
+	height: auto;
+	width: 100%;
+	float: left;
+	margin-bottom: 35px;
+}
+#dodaj-izjavu .izjava-form {
+	height: auto;
+	width: 100%;
+	float: left;
+}
+#dodaj-izjavu .izjava-form .izjava-msg {
+	float: left;
+	height: 150px;
+	width: 100%;
+	border: 1px solid #888;
+	border-radius: 3px;
+	padding: 10px;
+	max-width: 100%;
+}
+#dodaj-izjavu .izjava-form .izjava-button {
+	float: right;
+	height: 25px;
+	width: 100px;
+	margin-top: 10px;
+	color: #FFF;
+	text-decoration: none;
+	background-color: #962c5c;
+	border: none;
+	border-radius: 3px;
+	font: 14px "museo500";
+	cursor: pointer;
+}
+#full-title {
+	float: left;
+	height: auto;
+	width: 100%;
+	border-top: 10px solid #f2e7f5;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#full-title h1 {
+	font-size: 35px;
+	line-height: 40px;
+	color: #ad4f7a;
+	text-decoration: none;
+	font-weight: normal;
+}
+#full-social {
+    float: left;
+    height: 384px;
+    position: relative;
+    width: 130px;
+}
+#full-social p {
+    line-height: 12px;
+    margin-bottom: 10px;
+}
+#full-social .category {
+    bottom: 30px;
+    color: #ad4f7a;
+    font-family: italianno,arial;
+    font-size: 30px;
+	font-weight: bold;
+    left: 0;
+    line-height: 17px;
+    position: absolute;
+    width: 130px;
+}
+#full-social .datum {
+    bottom: 0;
+    color: #4b4b4b;
+    font-family: italianno,arial;
+    font-size: 22px;
+    left: 0;
+    line-height: 17px;
+    position: absolute;
+    width: 130px;
+}
+#full-image {
+	height: auto;
+	width: auto;
+	padding-left: 130px;
+}
+#full-image img{
 	height: auto;
 	width: 100%;
 }
+#full-text {
+	float: left;
+	height: auto;
+	width: 100%;
+	font-size: 13px;
+	line-height: 19px;
+	color: #333333;
+	text-decoration: none;
+	font-family: "museo300";
+	padding-bottom: 15px;
+}
+#full-text img{
+	float: left;
+	height: auto;
+	width: auto;
+	margin: 10px;
+}
+#full-text blockquote {
+	padding-left: 15px;
+	border-left: 7px solid #af032b;
+}
+#about-image {
+	height: auto;
+	width: 100%;
+	text-align: center;
+}
+#komentari {
+	float: left;
+	height: auto;
+	width: 100%;
+	border-top: 5px solid #a79fb1;
+	margin-top: 15px;
+}
 
 
+#footer {
+	height: 194px;
+	width: 100%;
+	background-color: #272727;
+	background-image: url(../images/footer-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin-top: 20px;
+}
+#footer-container {
+	height: auto;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1180px;
+}
+#sitemap {
+	float: left;
+	height: 180px;
+	width: 180px;
+	margin: 7px;
+}
+#sitemap a {
+	font: 12px/35px "museo300";
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+	float: left;
+	height: auto;
+	width: 180px;
+	text-transform: uppercase;
+}
 
-
-
-
-
-
-
-
-
-
-
+#sitemap a:hover {
+	color: #D972C3;
+}
+#sitemap p {
+	font: 12px/18px "museo300";
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+	float: left;
+	height: auto;
+	width: 180px;
+	text-transform: uppercase;
+	padding: 0 0 0 25px;
+	margin: 5px 0;
+}
+#sitemap p a {
+    color: #ad4f7a;
+    display: inline-block;
+    float: left;
+    font: 12px "museo300";
+    height: auto;
+    margin: 2px 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+    width: 180px;
+}
+#sitemap .footer-title {
+	font: 36px/30px italianno;
+	color: #FFF;
+	text-decoration: none;
+}
+#footer-info {
+	height: 50px;
+	width: 100%;
+	background-color: #fff;
+}
+#footer-info-container {
+	height: auto;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1180px;
+	line-height: 50px;
+}
 
 
 .----------------------{}
 @media screen and (min-width: 640px) and (max-width: 768px){
 }
 @media screen and (min-width: 769px) and (max-width: 1024px){
+#testimonials-post .testimonials-post-text {
+    color: #2b2b2b;
+    float: left;
+    font: 13px/18px "museo300";
+    height: auto;
+    text-decoration: none;
+    width: 170px;
+}
 }
 @media screen and (min-width: 1025px) and (max-width: 1280px){
+#testimonials-post .testimonials-post-text {
+    color: #2b2b2b;
+    float: left;
+    font: 13px/18px "museo300";
+    height: auto;
+    text-decoration: none;
+    width: 170px;
+}
 }
 @media screen and (min-width: 1281px) and (max-width: 1400px){
 }
