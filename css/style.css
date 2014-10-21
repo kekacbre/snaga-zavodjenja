@@ -80,7 +80,32 @@ ul{
     text-align: center;
     top: -15px;
     width: 25px;
+	cursor:pointer;
 }
+.modal-overlay {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	background-color: #962c5c;
+	top: 0px;
+}
+.modal-box {
+	height: auto;
+	min-height: 200px;
+	width: 710px;
+	margin-left: -355px;
+	position: absolute;
+	z-index: 11;
+	left: 50%;
+	top: 100px;
+	background-color: #fff;
+	box-shadow: 0 0 35px 0 rgba(0,0,0,0.4);
+	display: none;
+	padding: 10px;
+}
+
+
 #log-overlay {
 	position: fixed;
 	height: 100%;
@@ -115,6 +140,32 @@ ul{
 	display: none;
 	padding: 10px;
 }
+#forgot-box {
+	height: 340px;
+	width: 710px;
+	margin-left: -355px;
+	position: absolute;
+	z-index: 11;
+	left: 50%;
+	top: 100px;
+	background-color: #fff;
+	box-shadow: 0 0 35px 0 rgba(0,0,0,0.4);
+	display: none;
+	padding: 10px;
+}
+#myacc-box {
+	height: 500px;
+	width: 710px;
+	margin-left: -355px;
+	position: absolute;
+	z-index: 11;
+	left: 50%;
+	top: 100px;
+	background-color: #fff;
+	box-shadow: 0 0 35px 0 rgba(0,0,0,0.4);
+	display: none;
+	padding: 10px;
+}
 #box-header .header-heart {
 	float: right;
 	height: 42px;
@@ -128,6 +179,15 @@ ul{
 	background-image: url(../images/registracija-text.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+#box-header.login {
+	background-image: url(../images/login-text.png);
+}
+#box-header.forgot {
+	background-image: url(../images/forgot-text.png);
+}
+#box-header.acc {
+	background-image: url(../images/acc-text.png);
 }
 #box-body {
 	float: left;
@@ -200,6 +260,13 @@ ul{
 #box-body form .submit:hover {
 	background-color: #6d123c;
 }
+#box-body form .forgot {
+	color: #962c5c;
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+}
+
 #box-desc {
 	font-family: "museo300";
 	font-size: 15px;
@@ -247,7 +314,7 @@ ul{
 #right-buttons {
 	float: right;
 	height: 50px;
-	width: 185px;
+	width: auto;
 	margin: 38px 0;
 	text-transform: uppercase;
 	text-align: center;
@@ -271,6 +338,18 @@ ul{
 	float: left;
 	height: 50px;
 	width: 35px;
+	background-position: center top;
+	padding-top: 35px;
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;
+}
+#right-buttons .myacc-form {
+	background-image: url(../images/login-button.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 50px;
+	width: 90px;
 	background-position: center top;
 	padding-top: 35px;
 	font-size: 12px;

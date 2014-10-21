@@ -30,6 +30,7 @@
         <div id="right-buttons">
             <a href="#" class="reg-form">Registracija</a>
             <a href="#" class="login-form">Login</a>
+            <a href="#" class="myacc-form">Moj nalog</a>
         </div>
 	    <div id="reg-box">
           	<a class="close"><img title="close" class="close_image" src="images/closelabel.png"></a>
@@ -46,24 +47,24 @@
        	  	  	  	<label>Ponovi lozinku:</label>
                     <input type="password" name="repeat-password" class="mrgB0"/>
                   	<span class="line20-strong"></span>
-               	  	<div class="check_button check_1 active transition" onClick="$(this).addClass('active'); $('.check_2').removeClass('active'); $('.premium').val('besplatno');">
+           	  	  <div class="check_button check_1 active transition" onClick="$(this).addClass('active'); $('.check_2').removeClass('active'); $('.premium').val('besplatno');">
                     Besplatno<br> članstvo
                     </div>
-                    <div class="check_button check_2 fright transition" onClick="$(this).addClass('active'); $('.check_1').removeClass('active'); $('.premium').val('full');">
+                    <div class="check_button check_2 fright transition" onClick="$(this).addClass('active'); $('.check_1').removeClass('active'); $('.premium').val('puno');">
                     Puno <br>članstvo
                     </div>
                     <input type="hidden" name="premium" class="premium" value="bussiness"/>
                   	<span class="line20-strong"></span>
-                    <button type="submit" class="submit transition">Login</button>
+                    <button type="submit" class="submit transition">Regustuj se</button>
                 </form>
                 <div id="box-desc">
                 	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.
                 </div>
             </div>
         </div>
-		<div id="login-box">
+	  <div id="login-box">
           	<a class="close"><img title="close" class="close_image" src="images/closelabel.png"></a>
-        	<div id="box-header"><img src="images/login-heart-header.png" alt="snaga zavodjenja header heart" class="header-heart"></div>
+        	<div id="box-header" class="login"><img src="images/login-heart-header.png" alt="snaga zavodjenja header heart" class="header-heart"></div>
         	<div id="box-body">
             	<form action="#" method="post" enctype="multipart/form-data">
                 	<label>Korisničko ime:</label>
@@ -71,6 +72,7 @@
                 	<label>Email:</label>
                     <input type="text" name="email" />
                   	<span class="line20-strong"></span>
+                    <a href="#" class="forgot forgot-form">Zaboravljena lozinka?</a>
                   	<button type="submit" class="submit transition">Login</button>
                 </form>
                 <div id="box-desc">
@@ -78,6 +80,49 @@
                 </div>
             </div>
         </div>
+        
+		<div id="forgot-box">
+          	<a class="close"><img title="close" class="close_image" src="images/closelabel.png"></a>
+        	<div id="box-header" class="forgot"><img src="images/login-heart-header.png" alt="snaga zavodjenja header heart" class="header-heart"></div>
+        	<div id="box-body">
+            	<form action="#" method="post" enctype="multipart/form-data">
+                	<label>Korisničko ime:<span class="fright">Nikola Mitrović</span></label>
+                  	<span class="line20-strong"></span>
+                	<label>Email:</label>
+                    <input type="text" name="email" />
+                  	<span class="line20-strong"></span>
+                  	<button type="submit" class="submit transition">Pošalji</button>
+                </form>
+                <div id="box-desc">
+                	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.
+                </div>
+            </div>
+        </div>
+        
+		<div id="myacc-box">
+          	<a class="close"><img title="close" class="close_image" src="images/closelabel.png"></a>
+        	<div id="box-header" class="acc"><img src="images/login-heart-header.png" alt="snaga zavodjenja header heart" class="header-heart"></div>
+        	<div id="box-body">
+            	<form action="#" method="post" enctype="multipart/form-data">
+                	<label>Korisničko ime:<span class="fright">Nikola Mitrović</span></label>
+                  	<span class="line20-strong"></span>
+                	<label>Email:<span class="fright">nikola@scalateam.com</span></label>
+                  	<span class="line20-strong"></span>
+                	<label>Lozinka:</label>
+                    <input type="text" name="email" />
+                	<label>Nova lozinka:</label>
+                    <input type="text" name="email" />
+                	<label>Ponovi novu lozinka:</label>
+                    <input type="text" name="email" />
+                  	<span class="line20-strong"></span>
+                  	<button type="submit" class="submit transition">Pošalji</button>
+                </form>
+                <div id="box-desc">
+                	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.
+                </div>
+            </div>
+        </div>
+        
     </div>
 </div>
 <div id="body">

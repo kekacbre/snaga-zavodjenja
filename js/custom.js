@@ -78,16 +78,40 @@ $('#log-overlay, .close').click(function(){
 	$('#log-overlay').fadeOut();
 	$('#reg-box').fadeOut();
 	$('#login-box').fadeOut();
+	$('#forgot-box').fadeOut();
+	$('#myacc-box').fadeOut();
 });
 $('.reg-form').click(function(){
 	$('#log-overlay').fadeIn();
 	$('#reg-box').fadeIn();
 	$('#login-box').fadeOut();
+	$('#forgot-box').fadeOut();
+	$('#myacc-box').fadeOut();
 });
 $('.login-form').click(function(){
 	$('#log-overlay').fadeIn();
 	$('#reg-box').fadeOut();
 	$('#login-box').fadeIn();
+	$('#forgot-box').fadeOut();
+	$('#myacc-box').fadeOut();
+});
+$('.forgot-form').click(function(){
+	$('#log-overlay').fadeIn();
+	$('#reg-box').fadeOut();
+	$('#login-box').fadeOut();
+	$('#forgot-box').fadeIn();
+	$('#myacc-box').fadeOut();
+});
+$('.myacc-form').click(function(){
+	$('#log-overlay').fadeIn();
+	$('#reg-box').fadeOut();
+	$('#login-box').fadeOut();
+	$('#forgot-box').fadeOut();
+	$('#myacc-box').fadeIn();
+});
+$('.modal').click(function(){
+	$('.modal-overlay').fadeIn();
+	$('.modal-box').fadeOut();
 });
 
 }); // ready

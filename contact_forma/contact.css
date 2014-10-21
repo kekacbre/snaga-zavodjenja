@@ -1,0 +1,90 @@
+html {
+    font-family: 'ProximaNova-Regular',arial;
+}
+#contactus fieldset {
+    border: 1px solid #000077;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px;
+    width: 400px;
+}
+#contactus legend, h2 {
+    color: #555555;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1.3em;
+}
+#contactus label {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+#contactus input[type="text"], textarea {    
+	background-color: #FFFFFF;    
+	border: medium none;    
+	color: #000000;    
+	font-family: arial;    
+	font-size: 12px;    
+	line-height: 120%;    
+	padding: 3px;
+}
+#contactus input[type="text"] {
+    border-bottom: 2px solid #962c5c;
+    height: 24px;
+    width: 100%;
+}
+#contactus #scaptcha {
+    height: 18px;
+    width: 60px;
+}
+#contactus input[type="submit"] {
+    background-color: #962c5c;
+    border: medium none;
+    color: #FFFFFF;
+    height: 30px;
+    padding-left: 0;
+    width: 100px;
+}
+#contactus textarea {
+    border-bottom: 2px solid #962c5c;
+    max-height: 120px;
+    max-width: 310px;
+	font-size: 12px;    
+}
+#contactus input[type="text"]:focus, textarea:focus {
+    background-color: #FFFFFF;
+}
+#contactus .container {
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+#contactus .error {
+    background-color: #962c5c;
+    color: #FFFFFF;
+    font-size: 0.7em;
+}
+#contactus fieldset#antispam {
+    border-color: #FFFFFF -moz-use-text-color -moz-use-text-color;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    padding: 2px;
+    width: 350px;
+}
+#contactus fieldset#antispam legend {
+    color: #FFFFFF;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+#contactus .short_explanation {
+    color: #000000;
+    font-size: 0.6em;
+}
+#contactus .spmhidip {
+    display: none;
+    height: 3px;
+    width: 10px;
+}
+#fg_crdiv {
+    font-size: 0.3em;
+    opacity: 0.2;
+}
+#fg_crdiv p {
+    display: none;
+}
